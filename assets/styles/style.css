@@ -109,6 +109,14 @@ textarea {
     background-color: #F7F7F9;
 }
 
+.red-color {
+    color: #F44336;
+}
+
+.green-color {
+    color: #4CAF50;
+}
+
 /** LAYOUT *******************/
 .block {
     display: block;
