@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-AU" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +14,14 @@
     <meta name="author" content="Ram Alsaifi">
     <!-- INTERNAL ASSETS -->
     <!-- <link rel="icon" type="image/jpg" href="assets/images/symbol.png"> -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/styles/style.min.css">
+    <script src="assets/scripts/form.min.js" defer></script>
     <!-- EXTERNAL ASSETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <aside id="subheader" class="dark-background">
         <div class="container flex">
@@ -49,7 +52,8 @@
                 experiences, tailored for the Australian market
                 and beyond.</p>
             <!-- <div class="space-20"></div> -->
-            <a href="#contact" class="button m-full-width inline-block text-center dark-background font-bold">Get in Touch</a>
+            <a href="#contact" class="button m-full-width inline-block text-center dark-background font-bold">Get in
+                Touch</a>
         </div>
     </header>
     <section id="about" class="section light-background">
@@ -69,12 +73,39 @@
                     <p>Tell us about your needs and we'll reply back to you with a quote</p>
                     <p class="display-4">Call us on <a href="tel:1300947130" class="primary-color font-bolder">1300 947
                             130</a></p>
-                    <p>Or fill the contact form and we'll get back to you</p>
                 </div>
                 <div class="col-5 form-container">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeoWyrxvRvfoCE31J7ouBCGrw1b1AujQHHKuLfz66HYh_X3UA/viewform?embedded=true"
-                        width="640" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <p class="display-5 font-normal">Or simply fill out our contact form, and we'll get back to you
+                        promptly.</p>
+                    <form name="contact" method="POST" data-netlify="true" id="contact-form" novalidate>
+                        <div class="form-control">
+                            <label for="user-name">Your name *</label><br>
+                            <input type="text" name="name" id="user-name" class="full-width input">
+                        </div>
+                        <div class="form-control">
+                            <label for="user-email">Your email *</label><br>
+                            <input type="text" name="email" id="user-email" class="full-width input">
+                        </div>
+                        <div class="form-control">
+                            <label for="user-mobile">Your mobile</label><br>
+                            <input type="text" name="mobile" id="user-mobile" class="full-width input">
+                        </div>
+                        <div class="form-control">
+                            <label for="user-subject">Subject *</label><br>
+                            <input type="text" name="subject" id="user-subject" class="full-width input">
+                        </div>
+                        <div class="form-control">
+                            <label for="user-content">Message *</label><br>
+                            <textarea name="content" id="user-content" class="full-width input"></textarea>
+                            <div class="space-20"></div>
+                        </div>
+                        <div class="flex flex-wrap y-center gap-20">
+                            <button type="submit" class="primary m-full-width submit-button">Send
+                                message</button>
+                            <span class="error-message red-color display-4"></span>
+                            <span class="success-message green-color display-4"></span>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -109,4 +140,5 @@
         </div>
     </footer>
 </body>
+
 </html>

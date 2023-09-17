@@ -28,6 +28,13 @@ a {
     cursor: pointer;
 }
 
+input,
+textarea {
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
 /** TYPOGRAPHY *******/
 .display-1 {
     font-size: 34px;
@@ -186,13 +193,22 @@ a {
 /** FORM CONTROLS **************/
 .button.primary, button.primary {
     background-color: #FDCA40;
-    color: #FFF;
+    color: #080708;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.08);
 }
 
 .button.outlined {
     background: none;
     border: 2px solid;
+}
+
+.form-control {
+    margin-bottom: 12px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 6px;
 }
 
 /** CUSTOM ************************/
@@ -225,14 +241,6 @@ a {
 
 #header .button {
     padding: 14px 20px;
-}
-
-.form-container {
-    margin: 0 -20px;
-}
-
-.form-container iframe {
-    max-width: 100%;
 }
 
 #footer .copyright {
