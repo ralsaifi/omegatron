@@ -4,7 +4,9 @@ body {
     color: #080708;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -19,7 +21,8 @@ a {
     color: #FDCA40;
 }
 
-.button, button {
+.button,
+button {
     border: none;
     padding: 10px 16px;
     background-color: #FFF;
@@ -215,6 +218,24 @@ textarea {
     gap: 60px;
 }
 
+/** POSITIONS ****************/
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.sticky {
+    position: sticky; 
+}
+
+.relative {
+    position: relative;
+}
+
+
 /** CONTAINERS ***************/
 .section {
     padding: 100px 0;
@@ -227,10 +248,11 @@ textarea {
 }
 
 /** FORM CONTROLS **************/
-.button.primary, button.primary {
+.button.primary,
+button.primary {
     background-color: #FDCA40;
     color: #080708;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.08);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .05), 0 1px 2px 0 rgba(0, 0, 0, .08);
 }
 
 .button.outlined {
@@ -249,17 +271,17 @@ textarea {
 
 /** CUSTOM ************************/
 #subheader {
-    position: relative;
     padding: 8px;
 }
+
 #subheader .container {
     justify-content: end;
 }
 
 #nav {
-    position: sticky;
     top: 0;
     padding: 12px 0;
+    z-index: 999;
 }
 
 .logo .symbol {
@@ -275,8 +297,11 @@ textarea {
     margin-top: -100px;
 }
 
-#header .button {
+#header .button.contact {
     padding: 14px 20px;
+    bottom: 75px;
+    right: 20px;
+    left: 20px;
 }
 
 #footer .copyright {
@@ -285,19 +310,20 @@ textarea {
 
 /** BREAKPOINTS *******************/
 @media (min-width: 699px) {
+
     /** TYPOGRAPHY *******/
     .display-1 {
         font-size: 56px;
     }
-    
+
     .display-2 {
         font-size: 42px;
     }
-    
+
     .display-3 {
         font-size: 32px;
     }
-    
+
     .display-4 {
         font-size: 26px;
     }
@@ -314,6 +340,7 @@ textarea {
     .m-full-width {
         width: unset;
     }
+
     /** COLUMNS *************/
     .col-10 {
         width: 100%;
@@ -358,5 +385,9 @@ textarea {
     /** CUSTOM **************/
     #header {
         padding: 140px 0;
+    }
+
+    #header .button.contact {
+        position:unset;
     }
 }
