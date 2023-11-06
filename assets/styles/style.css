@@ -18,7 +18,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #FDCA40;
+    color: #004aff;
 }
 
 .button,
@@ -89,23 +89,31 @@ textarea {
 
 /** COLOURS **********/
 .primary-background {
-    background-color: #FDCA40;
+    background-color: #004aff;
 }
 
 .primary-color {
-    color: #FDCA40;
+    color: #004aff;
 }
 
 .dark-background {
-    background-color: #080708;
+    background-color: #0042ee;
 }
 
 .dark-color {
     color: #080708;
 }
 
+.white-color {
+    color: #ffffff;
+}
+
 .light-color {
     color: #F7F7F9;
+}
+
+.white-background {
+    background-color: #ffffff;
 }
 
 .light-background {
@@ -250,8 +258,8 @@ textarea {
 /** FORM CONTROLS **************/
 .button.primary,
 button.primary {
-    background-color: #FDCA40;
-    color: #080708;
+    background-color: #004aff;
+    color: #ffffff;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .05), 0 1px 2px 0 rgba(0, 0, 0, .08);
 }
 
