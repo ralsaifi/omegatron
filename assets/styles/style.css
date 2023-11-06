@@ -288,15 +288,15 @@ button.primary {
 
 #nav {
     top: 0;
-    padding: 12px 0;
+    padding: 16px 0;
     z-index: 999;
 }
 
 .logo .symbol {
-    padding: 0 12px;
-    font-size: 30px;
-    margin-right: 6px;
-    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    margin-right: 3px;
 }
 
 #header {
@@ -391,6 +391,11 @@ button.primary {
     }
 
     /** CUSTOM **************/
+    .logo .symbol {
+        width: 30px;
+        height: 30px;
+    }
+
     #header {
         padding: 140px 0;
     }
